@@ -2,24 +2,72 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Inter&family=Montserrat&family=Pixelify+Sans&family=Silkscreen&display=swap"
+      rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
   <body>
     <div id="app" class="flex flex-col">
-      <header
-        class="flex flex-row items-center justify-between w-full h-24 bg-pink-400">
-        <div id="logo">Jessica Gardner Painting</div>
-        <nav>
-          <ul class="flex flex-row">
+      <header class="flex flex-row items-center w-full h-24 bg-pink-400">
+        <div id="logo" class="text-white">Jessica Gardner Painting</div>
+        <nav class="flex justify-end grow">
+          <svg
+            class="w-10 h-10 fill-white lg:hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24">
+            <title>menu</title>
+            <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+          </svg>
+          <ul class="flex-row justify-center hidden gap-8 lg:flex">
             <li>Services</li>
             <li>Testimonials</li>
             <li>Contact</li>
           </ul>
         </nav>
       </header>
-      <div id="content"></div>
+
+      <div id="content">
+        <section id="about" class="flex flex-col items-center p-6">
+          <h1 class="text-2xl text-pink-400">About</h1>
+          <p class="mb-4 font-sans">
+            Jessica Gardner is a professional painting contractor with over 15
+            years of experience in the industry. I specialize in interior
+            painting, but I also have extensive experience with exterior
+            painting projects. My team and I are dedicated to providing
+            high-quality workmanship and exceptional customer service on every
+            project we undertake.
+          </p>
+          <p class="mb-4 font-sans">
+            We take pride in our attention to detail and our ability to work
+            closely with our clients to ensure that their vision is realized. We
+            use only the highest quality paints and materials to ensure that our
+            work stands the test of time. Whether you need a single room painted
+            or your entire home or business, we have the skills and expertise to
+            get the job done right.
+          </p>
+          <p class="mb-4 font-sans">
+            At Jessica Gardner Painting, we are committed to providing our
+            clients with the best possible experience from start to finish. We
+            offer free consultations and estimates, and we work closely with our
+            clients to ensure that their needs are met every step of the way.
+            Contact us today to learn more about our services and to schedule
+            your free consultation.
+          </p>
+        </section>
+        <section id="services">
+          <h2>Services</h2>
+        </section>
+        <section id="testimonials">
+          <h3>What our clients are saying...</h3>
+        </section>
+        <section id="contact">
+          <h4>Contact</h4>
+        </section>
+      </div>
       <footer></footer>
     </div>
     <script type="module" src="/main.js"></script>
