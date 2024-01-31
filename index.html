@@ -13,17 +13,19 @@
   <body>
     <div id="app" class="flex flex-col">
       <header
-        class="flex flex-row items-center justify-center w-full h-24 bg-pink-400">
+        class="flex flex-row items-center justify-center w-full h-20 bg-pink-400">
         <div id="logo" class="ml-8 text-2xl text-white">
           Jessica Gardner Painting
         </div>
         <nav class="justify-end hidden lg:flex grow">
           <ul
             class="flex-row justify-center hidden gap-8 mr-12 text-2xl text-white lg:flex">
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="hover:underline"><a href="#about">About</a></li>
+            <li class="hover:underline"><a href="#services">Services</a></li>
+            <li class="hover:underline">
+              <a href="#testimonials">Testimonials</a>
+            </li>
+            <li class="hover:underline"><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </header>
@@ -36,53 +38,91 @@
             alt="" />
         </section>
         <section id="about" class="flex flex-col items-center p-12">
-          <h1 class="p-8 text-2xl text-pink-400 lg:text-4xl">About</h1>
-          <p class="mb-4 font-sans">
-            Jessica Gardner is a professional painting contractor with over 15
-            years of experience in the industry. I specialize in interior
-            painting, but I also have extensive experience with exterior
-            painting projects. My team and I are dedicated to providing
-            high-quality workmanship and exceptional customer service on every
-            project we undertake.
-          </p>
-          <p class="mb-4 font-sans">
-            We take pride in our attention to detail and our ability to work
-            closely with our clients to ensure that their vision is realized. We
-            use only the highest quality paints and materials to ensure that our
-            work stands the test of time. Whether you need a single room painted
-            or your entire home or business, we have the skills and expertise to
-            get the job done right.
-          </p>
-          <p class="mb-4 font-sans">
-            At Jessica Gardner Painting, we are committed to providing our
-            clients with the best possible experience from start to finish. We
-            offer free consultations and estimates, and we work closely with our
-            clients to ensure that their needs are met every step of the way.
-            Contact us today to learn more about our services and to schedule
-            your free consultation.
-          </p>
+          <h1 class="pb-8 text-2xl text-pink-400 lg:text-4xl">About</h1>
+
+          <div
+            id="about-container"
+            class="flex flex-row flex-wrap justify-center gap-8 text-center md:flex md:flex-row md:flex-wrap md:gap-24 md:justify-center">
+            <div class="w-56 h-36">
+              <h2 class="text-xl text-pink-400 lg:text-2xl">
+                High-Quality Workmanship
+              </h2>
+              <p class="font-sans">
+                We use only the highest quality paints and materials to ensure
+                that our work stands the test of time.
+              </p>
+            </div>
+
+            <div class="w-56 h-36">
+              <h2 class="text-xl text-pink-400 lg:text-2xl">
+                Exceptional Customer Service
+              </h2>
+              <p class="font-sans">
+                We are committed to providing our clients with the best possible
+                experience from start to finish.
+              </p>
+            </div>
+
+            <div class="w-56 h-36">
+              <h2 class="text-xl text-pink-400 lg:text-2xl">
+                Attention To Detail
+              </h2>
+              <p class="font-sans">
+                We take pride in our attention to detail and ability to work
+                closely with clients to ensure their vision is realized.
+              </p>
+            </div>
+
+            <div class="w-56 h-36">
+              <h2 class="text-xl text-pink-400 lg:text-2xl">Expertise</h2>
+              <p class="font-sans">
+                With over 15 years of experience in the industry, we have the
+                skills and expertise to get the job done right.
+              </p>
+            </div>
+
+            <div class="w-56 h-36">
+              <h2 class="text-xl text-pink-400 lg:text-2xl">
+                Free Consultations and Estimates
+              </h2>
+              <p class="font-sans">
+                We offer free consultations and estimates, and work closely with
+                our clients to ensure that their needs are met every step of the
+                way.
+              </p>
+            </div>
+          </div>
         </section>
         <section
           id="services"
           class="flex flex-col items-center p-12 bg-pink-400">
-          <h2 class="p-8 text-2xl text-white lg:text-4xl">Services</h2>
+          <h2 class="pb-8 text-2xl text-white lg:text-4xl">Services</h2>
           <div
             id="services-container"
             class="flex flex-col gap-4 md:flex md:flex-row md:gap-14">
             <div class="flex flex-col items-center">
-              <img class="w-48 h-48" src="assets/swatch.jpg" alt="" />
+              <img
+                class="w-48 h-48 rounded-lg"
+                src="assets/swatch.jpg"
+                alt="" />
               <p class="p-4 text-xl text-center text-white">
                 Color Consultations
               </p>
             </div>
             <div class="flex flex-col items-center">
-              <img class="w-48 h-48" src="assets/interior.jpg" alt="" />
+              <img
+                class="w-48 h-48 rounded-lg"
+                src="assets/interior.jpg"
+                alt="" />
               <p class="p-4 text-xl text-center text-white">
                 Interior Painting
               </p>
             </div>
             <div class="flex flex-col items-center">
-              <img class="w-48 h-48" src="assets/exterior.jpg" alt="" />
+              <img
+                class="w-48 h-48 rounded-lg"
+                src="assets/exterior.jpg"
+                alt="" />
               <p class="p-4 text-xl text-center text-white">
                 Exterior Painting
               </p>
@@ -90,7 +130,7 @@
           </div>
         </section>
         <section id="testimonials" class="flex flex-col items-center p-12">
-          <h3 class="p-8 text-2xl text-pink-400 lg:text-4xl">
+          <h3 class="pb-8 text-2xl text-pink-400 lg:text-4xl">
             What our clients are saying...
           </h3>
           <div id="testimonial-container" class="md:flex md:flex-row">
@@ -123,8 +163,8 @@
         <section
           id="contact"
           class="flex flex-col items-center p-12 bg-pink-400">
-          <h4 class="p-8 text-2xl text-white lg:text-4xl">Contact</h4>
-          <div id="contact-container">
+          <h4 class="pb-8 text-2xl text-white lg:text-4xl">Contact</h4>
+          <div id="contact-container" class="lg:flex lg:flex-row lg:gap-24">
             <div
               id="phone-container"
               class="flex flex-row items-center gap-4 p-2">
